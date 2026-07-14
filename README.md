@@ -22,8 +22,10 @@ This repository contains the source code of XCL2, including UI libraries, animat
 
 ![GitHub Stars](https://img.shields.io/github/stars/zys-xiahusi/XCL2?style=flat&label=Stars&labelColor=444444&color=eac54f)
 ![GitHub Issues](https://img.shields.io/github/issues/zys-xiahusi/XCL2?style=flat&label=Issues&labelColor=444444&color=1F883D)
-[![Bilibili Main](https://img.shields.io/badge/BiliBili-仙清霁OIT-00A4DB?style=flat&labelColor=444444)](https://m.bilibili.com/space/3546845389261324)
-[![Bilibili Alt](https://img.shields.io/badge/BiliBili-仙清霁OIT小号-00A4DB?style=flat&labelColor=444444)](https://m.bilibili.com/space/3546885665065456)
+[![Bilibili Main](https://img.shields.io/badge/BiliBili-仙清霁OIT-00A4DB?style=flat&labelColor=444444)](https://b23.tv/nvF3gpV)
+[![Bilibili Alt](https://img.shields.io/badge/BiliBili-仙清霁OIT小号-00A4DB?style=flat&labelColor=444444)](https://b23.tv/ZvUjcKM)
+[![Bilibili Main](https://img.shields.io/badge/BiliBili-BBHRysr-00A4DB?style=flat&labelColor=444444)](https://b23.tv/SVi9Qku)
+[![Bilibili Alt](https://img.shields.io/badge/BiliBili-YeeBr-00A4DB?style=flat&labelColor=444444)](https://b23.tv/eVVrKz1)
 [![ifdian](https://img.shields.io/badge/ifdian-XCL2-946ce6?style=flat&labelColor=444444)](https://ifdian.net/a/xenithlauncher)
 
 ---
