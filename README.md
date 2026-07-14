@@ -1,4 +1,4 @@
-# XENITH Craft Launcher (XCL2)
+# XENITH Craft Launcher 2 (XCL2)
 
 **XENITH Craft Launcher (XCL2)** is a secondary development project based on  
 [Plain Craft Launcher 2 (PCL2)](https://github.com/Meloong-Git/PCL),  
