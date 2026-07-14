@@ -82,6 +82,7 @@ https://github.com/Meloong-Git/PCL/issues
 - **PCL2 Original Work**: [@Meloong-Git](https://github.com/Meloong-Git)
 - **Community Support**: PCL players & Minecraft modding community
 - **Personal Links**
-  - Bilibili (Main): [仙清霁OIT](https://m.bilibili.com/space/3546845389261324)
-  - Bilibili (Alt): [仙清霁OIT小号](https://m.bilibili.com/space/3546885665065456)
+  - Bilibili (Main): [仙清霁OIT](https://b23.tv/nvF3gpV)
+  - Bilibili (Alt): [仙清霁OIT小号](https://b23.tv/ZvUjcKM)
+  - Bilibili (Main): [Ysr](https://b23.tv/SVi9Qku)
   - ifdian: [xbiofps](https://ifdian.net/a/xbiofps)
