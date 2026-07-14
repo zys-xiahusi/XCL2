@@ -26,7 +26,7 @@ This repository contains the source code of XCL2, including UI libraries, animat
 [![Bilibili Alt](https://img.shields.io/badge/BiliBili-仙清霁OIT小号-00A4DB?style=flat&labelColor=444444)](https://b23.tv/ZvUjcKM)
 [![Bilibili Main](https://img.shields.io/badge/BiliBili-BBHRysr-00A4DB?style=flat&labelColor=444444)](https://b23.tv/SVi9Qku)
 [![Bilibili Alt](https://img.shields.io/badge/BiliBili-YeeBr-00A4DB?style=flat&labelColor=444444)](https://b23.tv/eVVrKz1)
-[![BiliBili Main](https://img.shields.io/badge/BiliBili-YeeBr-00A4DB?style=flat&labelColor=444444)](https://b23.tv/QxvDbCZ)
+[![BiliBili Main](https://img.shields.io/badge/BiliBili-HahaXiao_233-00A4DB?style=flat&labelColor=444444)](https://b23.tv/QxvDbCZ)
 [![ifdian](https://img.shields.io/badge/ifdian-XCL2-946ce6?style=flat&labelColor=444444)](https://ifdian.net/a/xenithlauncher)
 
 ---
