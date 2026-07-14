@@ -1,17 +1,92 @@
-# XENITH Craft Launcher
+# XENITH Craft Launcher (XCL2)
 
-[![Stars](https://img.shields.io/github/stars/Meloong-Git/PCL?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZD0iTTggLjI1YS43NS43NSAwIDAgMSAuNjczLjQxOGwxLjg4MiAzLjgxNSA0LjIxLjYxMmEuNzUuNzUgMCAwIDEgLjQxNiAxLjI3OWwtMy4wNDYgMi45Ny43MTkgNC4xOTJhLjc1MS43NTEgMCAwIDEtMS4wODguNzkxTDggMTIuMzQ3bC0zLjc2NiAxLjk4YS43NS43NSAwIDAgMS0xLjA4OC0uNzlsLjcyLTQuMTk0TC44MTggNi4zNzRhLjc1Ljc1IDAgMCAxIC40MTYtMS4yOGw0LjIxLS42MTFMNy4zMjcuNjY4QS43NS43NSAwIDAgMSA4IC4yNVoiIGZpbGw9IiNlYWM1NGYiLz48L3N2Zz4=&logoSize=auto&label=Stars&labelColor=444444&color=eac54f)](https://github.com/Meloong-Git/PCL/)
-[![Issues](https://img.shields.io/github/issues/Meloong-Git/PCL?style=flat&label=Issues&labelColor=444444&color=1F883D)](https://github.com/Meloong-Git/PCL/issues)
-[![哔哩哔哩](https://img.shields.io/badge/动态-BiliBili-00A4DB?style=flat&labelColor=444444&logoSize=auto)](https://space.bilibili.com/11343203/dynamic)
-[![爱发电](https://img.shields.io/badge/赞助-爱发电-946ce6?style=flat&labelColor=444444&logoSize=auto)](https://meloong.com/afd/a/LTCat)
+**XENITH Craft Launcher (XCL2)** is a secondary development project based on  
+[Plain Craft Launcher 2 (PCL2)](https://github.com/huanghongxun/PCL2),  
+aiming to provide an enhanced, customizable, and community-driven Minecraft Java Edition launching experience.
 
-包含 PCL 的大部分源代码，包括 UI 库、动画模块、下载模块、Minecraft 启动模块等！<br/>
-代码并不是实时更新的，它会在每次 PCL 发布更新时同步一次。<br/>
-非常感谢社区的大力支持！
+This repository contains the source code of XCL2, including UI libraries, animation systems, download modules, and Minecraft launch logic.
 
-<br/>
+> ⚠︎ The codebase is synchronized with PCL2 releases and is **not updated in real time**.
 
-### 相关资源
-- [PCL 下载](https://meloong.com/afd/p/0164034c016c11ebafcb52540025c377)：下载可免费使用的正式版 PCL！
-- [PCL 功能投票](https://github.com/Meloong-Git/PCL/discussions/2)：来参加投票吧，开发者会优先处理票数较高的项目！
-- [帮助文档库](https://github.com/LTCatt/PCL2Help)：PCL 内置帮助文档的存储库
+---
+
+## Project Status
+
+- Initial commit: July 2026
+- Early development stage
+- Contributions are welcome
+
+---
+
+## Badges
+
+![GitHub Stars](https://img.shields.io/github/stars/zys-xiahusi/XCL2?style=flat&label=Stars&labelColor=444444&color=eac54f)
+![GitHub Issues](https://img.shields.io/github/issues/zys-xiahusi/XCL2?style=flat&label=Issues&labelColor=444444&color=1F883D)
+[![Bilibili Main](https://img.shields.io/badge/BiliBili-仙清霁OIT-00A4DB?style=flat&labelColor=444444)](https://m.bilibili.com/space/3546845389261324)
+[![Bilibili Alt](https://img.shields.io/badge/BiliBili-仙清霁OIT小号-00A4DB?style=flat&labelColor=444444)](https://m.bilibili.com/space/3546885665065456)
+[![AfDian](https://img.shields.io/badge/AfDian-xbiofps-946ce6?style=flat&labelColor=444444)](https://ifdian.net/a/xbiofps)
+
+---
+
+## Related Resources
+
+### PCL Ecosystem
+
+- **PCL Official Repository**  
+  https://github.com/huanghongxun/PCL2
+
+- **PCL Help Documentation (Community Maintained)**  
+  https://github.com/LTCatt/PCL2Help  
+  > Built-in help library for PCL & Minecraft, written and maintained by players.
+
+- **PCL Feature Voting (Discussion)**  
+  https://github.com/Meloong-Git/PCL/discussions/2  
+  > Vote on upcoming features; high-voted items get prioritized.
+
+- **PCL Stable Download (Free)**  
+  https://meloong.com/afd/p/0164034c016c11ebafcb52540025c377  
+  > Free official releases. Snapshot builds require sponsorship.
+
+- **PCL Developer – 龙腾猫跃 (LTCatt)**  
+  - Bilibili: https://space.bilibili.com/11343203/dynamic  
+  - AfDian: https://meloong.com/afd/a/LTCat
+
+---
+
+## License
+
+This project is licensed under the  
+**[GNU General Public License v3.0 (GPL-3.0)](LICENSE)**
+
+> ⚠︎ As XCL2 is derived from PCL2, all modifications must remain open source and preserve original copyright notices.
+
+---
+
+## Contributing
+
+If you are interested in improving XCL2:
+
+1. Fork this repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+For PCL-related issues, please refer to the upstream issue tracker:
+https://github.com/Meloong-Git/PCL/issues
+
+---
+
+## Author & Credits
+
+- **XCL2 Developer**: [@zys-xhaosi](https://github.com/zys-xhaosi)
+- **PCL2 Original Work**: [@huanghongxun](https://github.com/huanghongxun)
+- **Community Support**: PCL players & Minecraft modding community
+- **Personal Links**
+  - Bilibili (Main): [仙清霁OIT](https://m.bilibili.com/space/3546845389261324)
+  - Bilibili (Alt): [仙清霁OIT小号](https://m.bilibili.com/space/3546885665065456)
+  - AfDian: [xbiofps](https://ifdian.net/a/xbiofps)
+
+---
+
+> “大号发视频，小号看视频。”  
+> — 仙清霁OIT
