@@ -24,7 +24,7 @@ This repository contains the source code of XCL2, including UI libraries, animat
 ![GitHub Issues](https://img.shields.io/github/issues/zys-xiahusi/XCL2?style=flat&label=Issues&labelColor=444444&color=1F883D)
 [![Bilibili Main](https://img.shields.io/badge/BiliBili-仙清霁OIT-00A4DB?style=flat&labelColor=444444)](https://m.bilibili.com/space/3546845389261324)
 [![Bilibili Alt](https://img.shields.io/badge/BiliBili-仙清霁OIT小号-00A4DB?style=flat&labelColor=444444)](https://m.bilibili.com/space/3546885665065456)
-[![AfDian](https://img.shields.io/badge/AfDian-xbiofps-946ce6?style=flat&labelColor=444444)](https://ifdian.net/a/xbiofps)
+[![ifdian](https://img.shields.io/badge/AfDian-xbiofps-946ce6?style=flat&labelColor=444444)](https://ifdian.net/a/xbiofps)
 
 ---
 
