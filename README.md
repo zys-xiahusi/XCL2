@@ -48,16 +48,15 @@ This repository contains the source code of XCL2, including UI libraries, animat
   > Free official releases. Snapshot builds require sponsorship.
 
 - **PCL Developer – LTCatt (LTCatt)**  
-  - Bilibili: 
-https://b23.tv/HiUOzyW  
+  - Bilibili:        https://b23.tv/HiUOzyW  
   - ifdian: https://meloong.com/afd/a/LTCat
 
 ---
 
-## License
+## Licence
 
 This project is licensed under the  
-**[GNU General Public License v3.0 (GPL-3.0)](LICENSE)**
+**[GNU General Public License v3.0 (GPL-3.0)](LICENCE)**
 
 > ⚠︎ As XCL2 is derived from PCL2, all modifications must remain open source and preserve original copyright notices.
 
