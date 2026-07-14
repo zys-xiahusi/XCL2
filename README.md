@@ -79,7 +79,7 @@ https://github.com/Meloong-Git/PCL/issues
 ## Author & Credits
 
 - **XCL2 Developer**: [@zys-xiahusi](https://github.com/zys-xiahusi)
-- **PCL2 Original Work**: [@huanghongxun](https://github.com/huanghongxun)
+- **PCL2 Original Work**: [@Meloong-Git](https://github.com/Meloong-Git)
 - **Community Support**: PCL players & Minecraft modding community
 - **Personal Links**
   - Bilibili (Main): [仙清霁OIT](https://m.bilibili.com/space/3546845389261324)
