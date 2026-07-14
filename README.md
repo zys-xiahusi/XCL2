@@ -1,7 +1,7 @@
 # XENITH Craft Launcher (XCL2)
 
 **XENITH Craft Launcher (XCL2)** is a secondary development project based on  
-[Plain Craft Launcher 2 (PCL2)](https://github.com/huanghongxun/PCL2),  
+[Plain Craft Launcher 2 (PCL2)](https://github.com/Meloong-Git/PCL),  
 aiming to provide an enhanced, customizable, and community-driven Minecraft Java Edition launching experience.
 
 This repository contains the source code of XCL2, including UI libraries, animation systems, download modules, and Minecraft launch logic.
