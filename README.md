@@ -85,4 +85,5 @@ https://github.com/Meloong-Git/PCL/issues
   - Bilibili (Main): [仙清霁OIT](https://b23.tv/nvF3gpV)
   - Bilibili (Alt): [仙清霁OIT小号](https://b23.tv/ZvUjcKM)
   - Bilibili (Main): [Ysr](https://b23.tv/SVi9Qku)
+  - BiliBili (Alt): [YeeBr](https://b23.tv/eVVrKz1)
   - ifdian: [XCL2](https://ifdian.net/a/xbiofps)
