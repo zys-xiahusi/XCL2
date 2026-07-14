@@ -1,0 +1,43 @@
+<local:MyPageRight
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PCL"
+    x:Class="PageOtherSkin"
+    PanScroll="PanBack"
+    RenderOptions.BitmapScalingMode="LowQuality">
+    <local:MyScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" x:Name="PanBack">
+        <Grid x:Name="PanMain" Margin="25,10">
+            <Border Background="{DynamicResource ColorBrushBg1}" CornerRadius="8" Padding="40">
+                <StackPanel>
+                    <TextBlock Text="XENITH 皮肤管理" FontSize="24" FontWeight="Bold" Foreground="{DynamicResource ColorBrush2}" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+
+                    <Border Background="{DynamicResource ColorBrushBg2}" CornerRadius="8" Padding="20" Margin="0,0,0,20">
+                        <StackPanel>
+                            <TextBlock Text="当前皮肤" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource ColorBrush2}" Margin="0,0,0,10"/>
+                            <Image x:Name="ImgSkinPreview" Width="128" Height="256" Stretch="Uniform" Margin="0,0,0,10"/>
+                            <TextBlock x:Name="LabSkinStatus" Foreground="{DynamicResource ColorBrush2}" Margin="0,0,0,10"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <local:MyButton x:Name="BtnSelectSkin" Text="选择皮肤文件" Height="35" ColorType="Normal" Margin="0,0,10,0"/>
+                                <local:MyButton x:Name="BtnUploadSkin" Text="上传皮肤" Height="35" ColorType="Highlight"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="{DynamicResource ColorBrushBg2}" CornerRadius="8" Padding="20" Margin="0,0,0,20">
+                        <StackPanel>
+                            <TextBlock Text="当前披风" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource ColorBrush2}" Margin="0,0,0,10"/>
+                            <Image x:Name="ImgCapePreview" Width="128" Height="64" Stretch="Uniform" Margin="0,0,0,10"/>
+                            <TextBlock x:Name="LabCapeStatus" Foreground="{DynamicResource ColorBrush2}" Margin="0,0,0,10"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <local:MyButton x:Name="BtnSelectCape" Text="选择披风文件" Height="35" ColorType="Normal" Margin="0,0,10,0"/>
+                                <local:MyButton x:Name="BtnUploadCape" Text="上传披风" Height="35" ColorType="Highlight"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock x:Name="LabStatus" Foreground="{DynamicResource ColorBrush2}" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </local:MyScrollViewer>
+</local:MyPageRight>
