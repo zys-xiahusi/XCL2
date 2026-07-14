@@ -85,8 +85,3 @@ https://github.com/Meloong-Git/PCL/issues
   - Bilibili (Main): [仙清霁OIT](https://m.bilibili.com/space/3546845389261324)
   - Bilibili (Alt): [仙清霁OIT小号](https://m.bilibili.com/space/3546885665065456)
   - AfDian: [xbiofps](https://ifdian.net/a/xbiofps)
-
----
-
-> “大号发视频，小号看视频。”  
-> — 仙清霁OIT
