@@ -33,7 +33,7 @@ This repository contains the source code of XCL2, including UI libraries, animat
 ### PCL Ecosystem
 
 - **PCL Official Repository**  
-  https://github.com/huanghongxun/PCL2
+  https://github.com/Meloong-Git/PCL
 
 - **PCL Help Documentation (Community Maintained)**  
   https://github.com/LTCatt/PCL2Help  
@@ -48,7 +48,8 @@ This repository contains the source code of XCL2, including UI libraries, animat
   > Free official releases. Snapshot builds require sponsorship.
 
 - **PCL Developer – LTCatt (LTCatt)**  
-  - Bilibili: https://space.bilibili.com/11343203/dynamic  
+  - Bilibili: 
+https://b23.tv/HiUOzyW  
   - ifdian: https://meloong.com/afd/a/LTCat
 
 ---
