@@ -82,10 +82,10 @@ https://github.com/Meloong-Git/PCL/issues
 - **PCL2 Original Work**: [@Meloong-Git](https://github.com/Meloong-Git)
 - **Community Support**: PCL players & Minecraft modding community
 - **Personal Links**
-** zys-xiahusi
+**zys-xiahusi**
   - Bilibili (Main): [仙清霁OIT](https://b23.tv/nvF3gpV)
   - Bilibili (Alt): [仙清霁OIT小号](https://b23.tv/ZvUjcKM)
-** Ysr
+**Ysr**
   - Bilibili (Main): [BBHRysr](https://b23.tv/SVi9Qku)
   - BiliBili (Alt): [YeeBr](https://b23.tv/eVVrKz1)
   - ifdian: [XCL2](https://ifdian.net/a/xbiofps)
