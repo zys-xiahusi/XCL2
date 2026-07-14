@@ -47,9 +47,9 @@ This repository contains the source code of XCL2, including UI libraries, animat
   https://meloong.com/afd/p/0164034c016c11ebafcb52540025c377  
   > Free official releases. Snapshot builds require sponsorship.
 
-- **PCL Developer – 龙腾猫跃 (LTCatt)**  
+- **PCL Developer – LTCatt (LTCatt)**  
   - Bilibili: https://space.bilibili.com/11343203/dynamic  
-  - AfDian: https://meloong.com/afd/a/LTCat
+  - ifdian: https://meloong.com/afd/a/LTCat
 
 ---
 
