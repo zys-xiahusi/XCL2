@@ -105,6 +105,6 @@ https://github.com/Meloong-Git/PCL/issues
 
   **HahaXiao_233**
 
-  BiliBili (Main):
+  - BiliBili (Main):
 [Hahaxiao_233](https://b23.tv/QxvDbCZ)
   - ifdian: [XCL2](https://ifdian.net/a/xenithlauncher)
