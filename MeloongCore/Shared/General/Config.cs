@@ -48,8 +48,6 @@ public class JsonConfigProvider : IConfigProvider {
             } else if (encrypted) {
                 // 需要加密，在 JSON 中保存密文字符串
                 throw new NotImplementedException("加密需要改为使用识别码，现在尚未实现。");
-                Logger.Trace($"配置已修改：{key} = 已加密（{filePath}）");
-                json.Value[key] = CryptographyUtils.AesEncrypt(value is string str ? str : JsonConvert.SerializeObject(value));
             } else {
                 // 用 JToken 保留原始结构
                 JToken token = JToken.FromObject(value);

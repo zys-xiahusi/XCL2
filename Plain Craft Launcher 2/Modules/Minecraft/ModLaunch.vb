@@ -241,10 +241,10 @@ NextInner:
             Sub()
                 Select Case Settings.Get(Of Integer)("SystemLaunchCount")
                     Case 10, 20, 40, 60, 80, 100, 120, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000, 1200, 1400, 1600, 1800, 2000
-                        If MyMsgBox("XCL 已经为你启动了 " & Settings.Get(Of Integer)("SystemLaunchCount") & " 次游戏啦！" & vbCrLf &
-                                    "如果 XCL 还算好用的话，能不能考虑赞助一下 XCL……" & vbCrLf &
-                                    "如果没有大家的支持，XCL 很难在免费、无任何广告的情况下维持数年的更新（磕头）……！",
-                                    Settings.Get(Of Integer)("SystemLaunchCount") & " 次启动！", "支持 XCL！", "但是我拒绝") = 1 Then
+                        If MyMsgBox("PCL 已经为你启动了 " & Settings.Get(Of Integer)("SystemLaunchCount") & " 次游戏啦！" & vbCrLf &
+                                    "如果 PCL 还算好用的话，能不能考虑赞助一下 PCL……" & vbCrLf &
+                                    "如果没有大家的支持，PCL 很难在免费、无任何广告的情况下维持数年的更新（磕头）……！",
+                                    Settings.Get(Of Integer)("SystemLaunchCount") & " 次启动！", "支持 PCL！", "但是我拒绝") = 1 Then
                             OpenWebsite("https://meloong.com/afd/a/LTCat")
                         End If
                 End Select
@@ -984,11 +984,11 @@ Retry:
                             "该账号目前填写的年龄是否在 13 岁以上？", "登录提示", "13 岁以上", "12 岁以下", "我不知道") = 1 Then
                     OpenWebsite("https://account.live.com/editprof.aspx")
                     MyMsgBox("请在打开的网页中修改账号的出生日期（至少改为 18 岁以上）。" & vbCrLf &
-                             "在修改成功后等待一分钟，然后再回到 XCL，就可以正常登录了！", "登录提示")
+                             "在修改成功后等待一分钟，然后再回到 PCL，就可以正常登录了！", "登录提示")
                 Else
                     OpenWebsite("https://support.microsoft.com/zh-cn/account-billing/如何更改-microsoft-帐户上的出生日期-837badbc-999e-54d2-2617-d19206b9540a")
                     MyMsgBox("请根据打开的网页的说明，修改账号的出生日期（至少改为 18 岁以上）。" & vbCrLf &
-                             "在修改成功后等待一分钟，然后再回到 XCL，就可以正常登录了！", "登录提示")
+                             "在修改成功后等待一分钟，然后再回到 PCL，就可以正常登录了！", "登录提示")
                 End If
                 Throw New OperationCanceledException
             Else
@@ -1020,7 +1020,7 @@ Retry:
                 Throw New Exception("$当前 IP 的登录尝试异常。" & vbCrLf & "如果你使用了 VPN 或加速器，请把它们关掉或更换节点后再试！")
             ElseIf ex.StatusCode = HttpStatusCode.ServiceUnavailable Then
                 Logger.Warn(ex, "微软登录第 4 步汇报 503")
-                Throw New Exception("$Mojang 服务器出现问题，请稍后再试。" & vbCrLf & "你的网络是正常的，XCL 也是正常的，是 Mojang 出问题了……")
+                Throw New Exception("$Mojang 服务器出现问题，请稍后再试。" & vbCrLf & "你的网络是正常的，PCL 也是正常的，是 Mojang 出问题了……")
             ElseIf ex.Response?.Contains("ACCOUNT_SUSPENDED") Then '#8655
                 MyMsgBox("该账号似乎已被微软封禁，无法登录。", "登录失败", "我知道了", IsWarn:=True)
                 Throw New OperationCanceledException
@@ -1275,20 +1275,7 @@ NextInstance:
                 Throw New Exception("无法连接到第三方登录服务器（" & If(Server, Nothing) & "）", ex)
             End Try
         End If
-        'XENITH 登录
-        If McLoginLoader.Output.Type = "XENITH" Then
-            If McLaunchJavaSelected.Version.Major >= 6 Then Args.Add("-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT")
-            Dim Server As String = Settings.Get(Of String)("XenithAuthServer")
-            If String.IsNullOrEmpty(Server) Then Server = "http://192.168.1.104:3000/"
-            If Not Server.EndsWith("/") Then Server &= "/"
-            Try
-                McLaunchLog($"开始 XENITH Auth Prefetch")
-                Dim Response As String = NetRequestByClientRetry(Server, Encoding:=Encoding.UTF8)
-                Args.Add("-javaagent:""${pure_directory}\authlib-injector.jar""=""" & Server & """")
-                Args.Add("-Dauthlibinjector.side=client")
-                Args.Add("-Dauthlibinjector.yggdrasil.prefetched=" & Convert.ToBase64String(Encoding.UTF8.GetBytes(Response)))
-            Catch ex As Exception
-                Throw New Exception("无法连接到 XENITH 登录服务器（" & Server & "）", ex)
+
         'JLW
         '非 GBK 编码下命令行参数乱码的问题（JDK-8272352）
         Dim UseJLW As Boolean =
@@ -1495,8 +1482,8 @@ NextInstance:
         Yield ("${natives_directory}", GetNativesFolder().TrimEnd("\"c))
         Yield ("${library_directory}", PathUtils.ToShortPath(McFolderSelected & "libraries"))
         Yield ("${libraries_directory}", PathUtils.ToShortPath(McFolderSelected & "libraries"))
-        Yield ("${pure_directory}", PathPure.TrimEnd("\"c)) '由 XCL 添加，这会允许在分割参数并去重后再替换路径，防止路径中的特殊字符影响参数分割和去重
-        Yield ("${launcher_name}", "XCL")
+        Yield ("${pure_directory}", PathPure.TrimEnd("\"c)) '由 PCL 添加，这会允许在分割参数并去重后再替换路径，防止路径中的特殊字符影响参数分割和去重
+        Yield ("${launcher_name}", "PCL")
         Yield ("${launcher_version}", VersionCode)
         Yield ("${version_name}", McInstanceSelected.Name)
         Yield ("${game_directory}", PathUtils.ToShortPath(Left(McInstanceSelected.PathIndie, McInstanceSelected.PathIndie.Count - 1)))
@@ -1715,7 +1702,7 @@ NextInstance:
         If Not (IsGBKEncoding OrElse Result.IsAsciiOnly()) Then
             Result = Paths.AppData & ".minecraft\bin\natives\"
             If Not Result.IsAsciiOnly() Then
-                Result = OsDrive & "ProgramData\XCL\natives\"
+                Result = OsDrive & "ProgramData\PCL\natives\"
             End If
         End If
         DirectoryUtils.Create(Result) '提前创建，这样 DirectoryUtils.Shorten 才有结果（否则在长路径下首次启动 Forge 会崩溃）
@@ -1737,10 +1724,10 @@ NextInstance:
                 If WindowsUtils.HasAdminRole() Then
                     Logger.Warn(ex, "直接调整显卡设置失败")
                 Else
-                    Logger.Warn(ex, "直接调整显卡设置失败，将以管理员权限重启 XCL 再次尝试")
+                    Logger.Warn(ex, "直接调整显卡设置失败，将以管理员权限重启 PCL 再次尝试")
                     Try
                         If RunAsAdmin($"--gpu ""{McLaunchJavaSelected.JavaExePath}""") = ProcessReturnValues.TaskDone Then
-                            McLaunchLog("以管理员权限重启 XCL 并调整显卡设置成功")
+                            McLaunchLog("以管理员权限重启 PCL 并调整显卡设置成功")
                         Else
                             Throw New Exception("调整过程中出现异常")
                         End If
@@ -1875,7 +1862,7 @@ NextInstance:
 
         '离线皮肤资源包
         Try
-            Dim ZipFileAddress As String = McInstanceSelected.PathIndie & "resourcepacks\XCL2 Skin.zip"
+            Dim ZipFileAddress As String = McInstanceSelected.PathIndie & "resourcepacks\PCL2 Skin.zip"
             Dim NewTypeSetup As Boolean = McInstanceSelected.Version.Vanilla.Major >= 13 OrElse McInstanceSelected.Version.Vanilla.Major < 6
             If McLoginLoader.Input.Type = McLoginType.Legacy AndAlso Settings.Get(Of Integer)("LaunchSkinType") = 4 AndAlso FileUtils.Exists(Paths.AppDataThenName & "CustomSkin.png") Then
                 Dim MetaFileAddress As String = PathTemp & "pack.mcmeta"
@@ -1926,13 +1913,13 @@ NextInstance:
                 '准备文件
                 Dim Bit As New MyBitmap(PathImage & "Heads/Logo.png")
                 Bit.Save(PackPicAddress)
-                FileUtils.Write(MetaFileAddress, "{""pack"":{""pack_format"":" & PackFormat & ",""description"":""XCL 自定义离线皮肤资源包""}}")
+                FileUtils.Write(MetaFileAddress, "{""pack"":{""pack_format"":" & PackFormat & ",""description"":""PCL 自定义离线皮肤资源包""}}")
                 Dim Skin As New MyBitmap(Paths.AppDataThenName & "CustomSkin.png")
                 If (McInstanceSelected.Version.Vanilla.Major = 6 OrElse McInstanceSelected.Version.Vanilla.Major = 7) AndAlso Skin.Pic.Height = 64 Then
                     McLaunchLog("该 Minecraft 版本不支持双层皮肤，已进行裁剪")
                     Skin = Skin.Clip(0, 0, 64, 32)
                 End If
-                Skin.Save(Paths.Base & "XCL\CustomSkin_Cliped.png")
+                Skin.Save(Paths.Base & "PCL\CustomSkin_Cliped.png")
                 '构建压缩文件
                 Dim FilesToCompress As New Dictionary(Of String, String) From {
                     {"pack.mcmeta", MetaFileAddress}, {"pack.png", PackPicAddress}}
@@ -1941,15 +1928,15 @@ NextInstance:
                     For Each SkinName In {"alex", "ari", "efe", "kai", "makena", "noor", "steve", "sunny", "zuri"}
                         FilesToCompress.Add(
                                 $"assets/minecraft/textures/entity/player/{If(Settings.Get(Of Boolean)("LaunchSkinSlim"), "slim", "wide")}/{SkinName}.png",
-                                Paths.Base & "XCL\CustomSkin_Cliped.png")
+                                Paths.Base & "PCL\CustomSkin_Cliped.png")
                     Next
                 Else
                     FilesToCompress.Add(
                             $"assets/minecraft/textures/entity/{If(Settings.Get(Of Boolean)("LaunchSkinSlim"), "alex.png", "steve.png")}",
-                            Paths.Base & "XCL\CustomSkin_Cliped.png")
+                            Paths.Base & "PCL\CustomSkin_Cliped.png")
                 End If
                 FileUtils.CreateZipFromFiles(ZipFileAddress, FilesToCompress)
-                FileUtils.Delete(Paths.Base & "XCL\CustomSkin_Cliped.png")
+                FileUtils.Delete(Paths.Base & "PCL\CustomSkin_Cliped.png")
                 '更改设置文件
                 IniClearCache(SetupFileAddress)
                 Dim EnabledResourcePack As String = ReadIni(SetupFileAddress, "resourcePacks", "[]").TrimStart("[").TrimEnd("]")
@@ -1958,18 +1945,18 @@ NextInstance:
                     Dim EnabledResourcePacks As New List(Of String)(EnabledResourcePack.Split(","))
                     Dim NewResourcePacks As New List(Of String)
                     For Each Res In EnabledResourcePacks
-                        If Res <> """file/XCL2 Skin.zip""" AndAlso Res <> "" Then NewResourcePacks.Add(Res)
+                        If Res <> """file/PCL2 Skin.zip""" AndAlso Res <> "" Then NewResourcePacks.Add(Res)
                     Next
-                    NewResourcePacks.Add("""file/XCL2 Skin.zip""")
+                    NewResourcePacks.Add("""file/PCL2 Skin.zip""")
                     Dim Result As String = "[" & NewResourcePacks.Join(","c) & "]"
                     WriteIni(SetupFileAddress, "resourcePacks", Result)
                 Else
                     Dim EnabledResourcePacks As New List(Of String)(EnabledResourcePack.Split(","))
                     Dim NewResourcePacks As New List(Of String)
                     For Each Res In EnabledResourcePacks
-                        If Res <> """XCL2 Skin.zip""" AndAlso Res <> "" Then NewResourcePacks.Add(Res)
+                        If Res <> """PCL2 Skin.zip""" AndAlso Res <> "" Then NewResourcePacks.Add(Res)
                     Next
-                    NewResourcePacks.Add("""XCL2 Skin.zip""")
+                    NewResourcePacks.Add("""PCL2 Skin.zip""")
                     Dim Result As String = "[" & NewResourcePacks.Join(","c) & "]"
                     WriteIni(SetupFileAddress, "resourcePacks", Result)
                 End If
@@ -1984,12 +1971,12 @@ IgnoreCustomSkin:
                 If NewTypeSetup Then
                     If EnabledResourcePack = "" Then EnabledResourcePack = """vanilla"""
                     Dim EnabledResourcePacks As New List(Of String)(EnabledResourcePack.Split(","))
-                    EnabledResourcePacks.Remove("""file/XCL2 Skin.zip""")
+                    EnabledResourcePacks.Remove("""file/PCL2 Skin.zip""")
                     Dim Result As String = "[" & EnabledResourcePacks.Join(","c) & "]"
                     WriteIni(SetupFileAddress, "resourcePacks", Result)
                 Else
                     Dim EnabledResourcePacks As New List(Of String)(EnabledResourcePack.Split(","))
-                    EnabledResourcePacks.Remove("""XCL2 Skin.zip""")
+                    EnabledResourcePacks.Remove("""PCL2 Skin.zip""")
                     Dim Result As String = "[" & EnabledResourcePacks.Join(","c) & "]"
                     WriteIni(SetupFileAddress, "resourcePacks", Result)
                 End If
@@ -2021,7 +2008,7 @@ IgnoreCustomSkin:
                 "echo 游戏已退出。" & vbCrLf &
                 "pause"
             FileUtils.Write(
-                filePath:=If(CurrentLaunchOptions.SaveBatch, Paths.Base & "XCL\LatestLaunch.bat"),
+                filePath:=If(CurrentLaunchOptions.SaveBatch, Paths.Base & "PCL\LatestLaunch.bat"),
                 text:=FilterAccessToken(CmdString, "F").Replace("%", "%%"),
                 encoding:=If(McLaunchJavaSelected.Version.Major > 8, Encoding.UTF8, Encoding.Default))
             If CurrentLaunchOptions.SaveBatch IsNot Nothing Then
@@ -2141,7 +2128,7 @@ IgnoreCustomSkin:
         '输出信息
         McLaunchLog("")
         McLaunchLog("~ 基础参数 ~")
-        McLaunchLog("XCL 版本：" & VersionDisplay & " (" & VersionCode & ")")
+        McLaunchLog("PCL 版本：" & VersionDisplay & " (" & VersionCode & ")")
         McLaunchLog($"游戏版本：{McInstanceSelected.VersionDisplayName}（{McInstanceSelected.Version.Vanilla}，Drop {McInstanceSelected.Version.Drop}{If(McInstanceSelected.Version.Reliable, "", "，无法完全确定")}）")
         McLaunchLog("资源版本：" & McAssetsGetIndexName(McInstanceSelected))
         McLaunchLog("版本继承：" & If(McInstanceSelected.InheritName = "", "无", McInstanceSelected.InheritName))
