@@ -1,3 +1,5 @@
+![XCL2](Plain%20Craft%20Launcher%202/Images/icon.ico "XENITH Craft Launcher 2")
+
 # XENITH Craft Launcher 2 (XCL2)
 
 **XENITH Craft Launcher (XCL2)** is a secondary development project based on  
