@@ -1,4 +1,6 @@
-![XCL2](Plain%20Craft%20Launcher%202/Images/icon.ico "XENITH Craft Launcher 2")
+<div align="center">
+  <img src="XCL2/Plain Craft Launcher 2/Images/icon.ico" alt="XCL2" width="120">
+</div>
 
 # XENITH Craft Launcher 2 (XCL2)
 
